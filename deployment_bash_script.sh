@@ -28,7 +28,7 @@ cd tech257-sparta-app/app2
 # Install npm dependencies
 npm install
 
-# Start npm (can also use node app.js)
+# Start npm (can also use node.js)
 npm start
 
 # Install pm2
@@ -36,5 +36,3 @@ sudo npm install pm2@latest -g
 
 # Start app with pm2
 pm2 start app.js
-
-
