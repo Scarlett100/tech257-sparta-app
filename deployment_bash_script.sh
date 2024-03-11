@@ -29,7 +29,10 @@ cd tech257-sparta-app/app2
 npm install
 
 # Start npm (can also use node.js)
-npm start
+#npm start <-- not needed if doing pm2, because script will never reach pm2 if npm is started.
+
+#stopPm2 before rerunning.
+pm2 stop app.js
 
 # Install pm2
 sudo npm install pm2@latest -g
