@@ -21,6 +21,9 @@ sudo systemctl restart nginx
 # Enable nginx
 sudo systemctl enable nginx
 
+# cd into root so it clones there on our vm
+cd /
+
 # Git Clone
 git clone https://github.com/Scarlett100/tech257-sparta-app.git
 
