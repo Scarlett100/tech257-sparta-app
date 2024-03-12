@@ -9,6 +9,9 @@ sudo apt upgrade -y
 # Install nginx
 sudo apt install -y nginx
 
+#reverse proxy 
+sudo sed -i "s|try_files .*;|proxy_pass http://127.0.0.1:3000;|g" /etc/nginx/sites-available/default
+
 # Restart nginx
 sudo systemctl restart nginx
 
