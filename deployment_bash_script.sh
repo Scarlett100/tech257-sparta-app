@@ -4,7 +4,10 @@
 sudo apt update -y
 
 # Upgrade
-sudo apt upgrade -y
+# sudo apt upgrade -y
+
+# new upgrade for bypassing all upgrades
+sudo DEBIAN_FRONTEND=noninteractive apt-get upgrade -yq
 
 # Install nginx
 sudo apt install -y nginx
