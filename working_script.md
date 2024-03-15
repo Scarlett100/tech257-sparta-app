@@ -13,6 +13,7 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get upgrade -yq
 sudo apt install -y nginx
 
 #reverse proxy 
+
 sudo sed -i "s|try_files .*;|proxy_pass http://127.0.0.1:3000;|g" /etc/nginx/sites-available/default
 
 # Restart nginx
@@ -40,7 +41,7 @@ npm install
 # Install pm2
 sudo npm install pm2@latest -g
 
-#stopPm2 before rerunning.
+# stopPm2 before rerunning.
 pm2 stop app.js
 
 # Start app with pm2
